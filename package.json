@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/zivaaa/nmf_db_mysql/issues"
   },
-  "homepage": "https://github.com/zivaaa/nmf_db_mysql#readme"
+  "homepage": "https://github.com/zivaaa/nmf_db_mysql#readme",
+  "dependencies": {
+    "knex": "^0.21.17",
+    "luxon": "^1.26.0",
+    "mysql": "^2.18.1"
+  }
 }
