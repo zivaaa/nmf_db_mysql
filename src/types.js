@@ -14,8 +14,8 @@
 /**
  * @memberOf nmf
  * @typedef {Object} nmf.Migration
- * @property {function(app:nmf.Migrator,nmf.DB):Promise<void>} up
- * @property {function(app:nmf.Migrator,nmf.DB):Promise<void>} down
+ * @property {function(migrator:nmf.Migrator,nmf.DB):Promise<void>} up
+ * @property {function(migrator:nmf.Migrator,nmf.DB):Promise<void>} down
  */
 
 
