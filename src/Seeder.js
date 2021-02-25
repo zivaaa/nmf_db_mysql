@@ -41,6 +41,7 @@ export class Seeder {
         if (config) {
             this.seeds = (await import(path.join(this.app.root, config.seedsPath))).default;
         }
+        this.registerSeed(this.seeds);
     }
 
     /**
