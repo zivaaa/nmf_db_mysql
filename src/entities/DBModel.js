@@ -150,11 +150,12 @@ export class DBModel {
 
     /**
      * get external data
-     * @param key
+     * @param {string} key
+     * @param {*|null} def
      * @return {*}
      */
-    getKept(key) {
-        return this._store[key] || null;
+    getKept(key, def = null) {
+        return this._store[key] || def;
     }
 
     /**

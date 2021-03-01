@@ -51,7 +51,7 @@ export class MysqlRepository extends BaseRepository {
     /**
      * @param where
      * @async
-     * @return {Promise<nmf.Application|nmf.DBModel|null>}
+     * @return {Promise<nmf.DBModel|null>}
      */
     async findOne(where) {
         const m = await this.query().where(where).first().then();
