@@ -68,8 +68,7 @@ export class MysqlRepository extends BaseRepository {
     }
 
     /**
-     *
-     * @param cb
+     * @param {function(query:Knex.QueryBuilder):void} cb
      * @return {Promise<nmf.DBModel[]>}
      */
     async findCb(cb) {
@@ -80,7 +79,7 @@ export class MysqlRepository extends BaseRepository {
 
     /**
      *
-     * @param cb
+     * @param {function(query:Knex.QueryBuilder):void} cb
      * @return {Promise<nmf.DBModel|null>}
      */
     async findOneCb(cb) {
